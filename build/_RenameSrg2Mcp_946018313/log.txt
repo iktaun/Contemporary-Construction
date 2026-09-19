@@ -1,0 +1,15 @@
+Java Launcher: C:\Program Files\Java\jdk-17\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\iktaun\.gradle\caches\modules-2\files-2.1\maven.modrinth\jade\11.13.1+forge\e5af2bdca3a600d3f0cf28cc9f735542d19e7fc\jade-11.13.1+forge.jar, --output, C:\Users\iktaun\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\jade\11.13.1+forge_mapped_parchment_2023.09.03-1.20.1\jade-11.13.1+forge_mapped_parchment_2023.09.03-1.20.1.jar, --mcp, C:\Users\iktaun\.gradle\caches\parchmentgradle\org\parchmentmc\data\parchment-1.20.1\2023.09.03\parchment-1.20.1-2023.09.03.zip, --strip-signatures'
+Classpath:
+ - C:\Users\iktaun\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.4.4\installertools-1.4.4-fatjar.jar
+Working directory: D:\Desktop\Contemporary Construction\Contemporary Construction\build\_RenameSrg2Mcp_946018313
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\iktaun\.gradle\caches\modules-2\files-2.1\maven.modrinth\jade\11.13.1+forge\e5af2bdca3a600d3f0cf28cc9f735542d19e7fc\jade-11.13.1+forge.jar
+Output: C:\Users\iktaun\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\jade\11.13.1+forge_mapped_parchment_2023.09.03-1.20.1\jade-11.13.1+forge_mapped_parchment_2023.09.03-1.20.1.jar
+MCP:    C:\Users\iktaun\.gradle\caches\parchmentgradle\org\parchmentmc\data\parchment-1.20.1\2023.09.03\parchment-1.20.1-2023.09.03.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "when": { "facing": "north" },
+      "apply": { "model": "contemporaryconstruction:block/other/sign_post_blank", "y": 0 }
+    },
+    {
+      "when": { "facing": "east" },
+      "apply": { "model": "contemporaryconstruction:block/other/sign_post_blank", "y": 90 }
+    },
+    {
+      "when": { "facing": "south" },
+      "apply": { "model": "contemporaryconstruction:block/other/sign_post_blank", "y": 180 }
+    },
+    {
+      "when": { "facing": "west" },
+      "apply": { "model": "contemporaryconstruction:block/other/sign_post_blank", "y": 270 }
+    },
+    {
+      "when": { "down": "true", "facing": "north" },
+      "apply": { "model": "contemporaryconstruction:block/column/formal/sign_post_connection", "y": 90 }
+    },
+    {
+      "when": { "down": "true", "facing": "east" },
+      "apply": { "model": "contemporaryconstruction:block/column/formal/sign_post_connection", "y": 0 }
+    },
+    {
+      "when": { "down": "true", "facing": "south" },
+      "apply": { "model": "contemporaryconstruction:block/column/formal/sign_post_connection", "y": 90 }
+    },
+    {
+      "when": { "down": "true", "facing": "west" },
+      "apply": { "model": "contemporaryconstruction:block/column/formal/sign_post_connection", "y": 0 }
+    }
+  ]
+}

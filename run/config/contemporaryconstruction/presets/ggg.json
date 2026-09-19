@@ -1,0 +1,30 @@
+{
+  "name": "ggg",
+  "author": "iktaun",
+  "createdTime": 1788274908906,
+  "description": "",
+  "textLayers": [
+    {
+      "text": "",
+      "color": "white",
+      "glowing": false,
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "rotation": 0.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0
+    },
+    {
+      "text": "dfghdfghfgh",
+      "color": "white",
+      "glowing": false,
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "rotation": 0.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0
+    }
+  ],
+  "imageLayers": [],
+  "shapeLayers": []
+}

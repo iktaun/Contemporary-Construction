@@ -1,0 +1,25 @@
+{
+  "multipart": [
+   {
+     "apply": {
+       "model": "contemporaryconstruction:block/column/formal/street_light_pole_blue_base"
+     }
+   },
+    {
+      "when": {
+        "show_base_a": "true"
+      },
+      "apply": {
+        "model": "contemporaryconstruction:block/column/formal/blue_base_a"
+      }
+    },
+   {
+     "when": {
+       "show_base_b": "true"
+     },
+     "apply": {
+       "model": "contemporaryconstruction:block/column/formal/blue_base_b"
+     }
+   }
+  ]
+}

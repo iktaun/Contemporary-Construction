@@ -1,0 +1,80 @@
+{
+  "multipart": [
+    {
+      "when": { "shape": "north_south" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_straight_signal_bitumen_block",
+        "y": 0
+      }
+    },
+    {
+      "when": { "shape": "east_west" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_straight_signal_bitumen_block",
+        "y": 90
+      }
+    },
+    {
+      "when": { "shape": "north_west" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_corner_signal_bitumen_block",
+        "y": 0
+      }
+    },
+    {
+      "when": { "shape": "north_east" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_corner_signal_bitumen_block",
+        "y": 90
+      }
+    },
+    {
+      "when": { "shape": "south_east" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_corner_signal_bitumen_block",
+        "y": 180
+      }
+    },
+    {
+      "when": { "shape": "south_west" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_corner_signal_bitumen_block",
+        "y": 270
+      }
+    },
+    {
+      "when": { "shape": "east_north_west" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_t_shaped_signal_bitumen_block",
+        "y": 0
+      }
+    },
+    {
+      "when": { "shape": "north_east_south" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_t_shaped_signal_bitumen_block",
+        "y": 90
+      }
+    },
+    {
+      "when": { "shape": "east_south_west" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_t_shaped_signal_bitumen_block",
+        "y": 180
+      }
+    },
+    {
+      "when": { "shape": "north_west_south" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_t_shaped_signal_bitumen_block",
+        "y": 270
+      }
+    },
+    {
+      "when": { "shape": "cross" },
+      "apply": {
+        "model": "contemporaryconstruction:block/road_block/sign/yellow/yellow_cross_signal_bitumen_block"
+      }
+    }
+  ]
+}

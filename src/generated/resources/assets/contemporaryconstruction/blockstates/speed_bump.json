@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "contemporaryconstruction:block/other/speed_bump",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "contemporaryconstruction:block/other/speed_bump"
+    },
+    "facing=south": {
+      "model": "contemporaryconstruction:block/other/speed_bump"
+    },
+    "facing=west": {
+      "model": "contemporaryconstruction:block/other/speed_bump",
+      "y": 90
+    }
+  }
+}

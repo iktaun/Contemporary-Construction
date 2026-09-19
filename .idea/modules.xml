@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contemporary_Construction.iml" filepath="$PROJECT_DIR$/.idea/modules/Contemporary_Construction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contemporary_Construction.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Contemporary_Construction.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contemporary_Construction.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Contemporary_Construction.test.iml" />
+    </modules>
+  </component>
+</project>

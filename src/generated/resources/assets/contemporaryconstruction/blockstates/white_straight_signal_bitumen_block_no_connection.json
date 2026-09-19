@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_straight_signal_bitumen_block_no_connection",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_straight_signal_bitumen_block_no_connection"
+    },
+    "facing=south": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_straight_signal_bitumen_block_no_connection"
+    },
+    "facing=west": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_straight_signal_bitumen_block_no_connection",
+      "y": 90
+    }
+  }
+}

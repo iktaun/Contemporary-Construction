@@ -1,0 +1,29 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "shape": "north_south"
+      },
+      "apply": {
+        "model": "contemporaryconstruction:block/other/tactile_paving"
+      }
+    },
+    {
+      "when": {
+        "shape": "east_west"
+      },
+      "apply": {
+        "model": "contemporaryconstruction:block/other/tactile_paving",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "shape": "cross"
+      },
+      "apply": {
+        "model": "contemporaryconstruction:block/other/tactile_paving_connection"
+      }
+    }
+  ]
+}

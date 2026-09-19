@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_character_jin_signal_bitumen_block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_character_jin_signal_bitumen_block"
+    },
+    "facing=south": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_character_jin_signal_bitumen_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "contemporaryconstruction:block/road_block/sign/white/white_character_jin_signal_bitumen_block",
+      "y": 270
+    }
+  }
+}

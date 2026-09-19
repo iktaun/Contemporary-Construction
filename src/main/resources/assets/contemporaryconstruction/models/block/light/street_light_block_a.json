@@ -1,0 +1,10 @@
+{
+  "loader": "forge:obj",
+  "model": "contemporaryconstruction:models/block/light/street_light_block_a.obj",
+  "flip_v": true,
+  "shade_quads":true,
+  "textures": {
+    "particle": "contemporaryconstruction:block/light/street_light_block_a",
+    "m_f7ba8b0f-989d-bb84-23d3-c5dacbd7ed1b": "contemporaryconstruction:block/light/street_light_block_a"
+  }
+}

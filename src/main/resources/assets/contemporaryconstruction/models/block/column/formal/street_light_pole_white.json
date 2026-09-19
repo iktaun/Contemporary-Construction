@@ -1,0 +1,10 @@
+{
+  "loader": "forge:obj",
+  "model": "contemporaryconstruction:models/block/column/formal/street_light_pole_white.obj",
+  "flip_v": true,
+  "shade_quads":true,
+  "textures": {
+    "particle": "contemporaryconstruction:block/column/formal/street_light_pole_white",
+    "m_773f9f90-2339-2bb3-1cd8-a9b79e49a203": "contemporaryconstruction:block/column/formal/street_light_pole_white"
+  }
+}

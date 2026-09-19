@@ -1,0 +1,10 @@
+{
+  "loader": "forge:obj",
+  "model": "contemporaryconstruction:models/block/barrier/road_fence_side.obj",
+  "flip_v": true,
+  "shade_quads":true,
+  "textures": {
+    "particle": "contemporaryconstruction:block/barrier/road_fence_side",
+    "m_64e27e8c-d5f0-7c66-3da9-cec8ce91fa51": "contemporaryconstruction:block/barrier/road_fence_side"
+  }
+}

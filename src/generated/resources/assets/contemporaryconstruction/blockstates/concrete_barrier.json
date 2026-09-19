@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "contemporaryconstruction:block/barrier/concrete_barrier",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "contemporaryconstruction:block/barrier/concrete_barrier"
+    },
+    "facing=south": {
+      "model": "contemporaryconstruction:block/barrier/concrete_barrier"
+    },
+    "facing=west": {
+      "model": "contemporaryconstruction:block/barrier/concrete_barrier",
+      "y": 90
+    }
+  }
+}

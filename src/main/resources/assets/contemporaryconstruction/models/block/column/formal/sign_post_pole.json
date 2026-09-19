@@ -1,0 +1,10 @@
+{
+  "loader": "forge:obj",
+  "model": "contemporaryconstruction:models/block/column/formal/sign_post_pole.obj",
+  "flip_v": true,
+  "shade_quads":true,
+  "textures": {
+    "particle": "contemporaryconstruction:block/column/formal/sign_post_pole",
+    "m_e2ef07e3-a483-3d22-cd8d-522c19dea883": "contemporaryconstruction:block/column/formal/sign_post_pole"
+  }
+}
