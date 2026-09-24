@@ -166,5 +166,18 @@ public class ModJaJpLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "この標識柱はワックス済みで編集できません");
         add("message.contemporaryconstruction.no_shapes", "図形が見つかりません。config/contemporaryconstruction/presets/persetelement/ に画像を入れてください");
         add("message.contemporaryconstruction.not_editable", "このブロックは編集可能とマークされていますが、IEditableWithBrush を実装していません");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 色");
+        add("gui.contemporaryconstruction.color.title", "色選択");
+        add("gui.contemporaryconstruction.color.ok", "OK");
+        add("gui.contemporaryconstruction.color.cancel", "キャンセル");
+        add("gui.contemporaryconstruction.color.invalid", "無効な16進数カラー");
+
+        // ===== GUI：フォント選択 =====
+        add("gui.contemporaryconstruction.edit.font", "フォント");
+        add("gui.contemporaryconstruction.font.title", "フォントを選択");
+        add("gui.contemporaryconstruction.font.empty", "カスタムフォントが見つかりません。config/contemporaryconstruction/fonts/ に .ttf ファイルを入れてください");
+        add("gui.contemporaryconstruction.font.vanilla", "バニラフォントを使用");
+        add("gui.contemporaryconstruction.font.cancel", "キャンセル");
     }
 }

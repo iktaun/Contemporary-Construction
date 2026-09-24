@@ -166,5 +166,18 @@ public class ModZhHkLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "此標誌桿已打蠟，無法編輯");
         add("message.contemporaryconstruction.no_shapes", "找不到形狀，請將圖片放入 config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "此方塊標記為可編輯，但未實作 IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 顏色");
+        add("gui.contemporaryconstruction.color.title", "顏色選擇器");
+        add("gui.contemporaryconstruction.color.ok", "確定");
+        add("gui.contemporaryconstruction.color.cancel", "取消");
+        add("gui.contemporaryconstruction.color.invalid", "無效的十六進制顏色");
+
+        // ===== GUI：字型選擇 =====
+        add("gui.contemporaryconstruction.edit.font", "字型");
+        add("gui.contemporaryconstruction.font.title", "選擇字型");
+        add("gui.contemporaryconstruction.font.empty", "未偵測到自訂字型，請將 .ttf 檔案放入 config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "使用原版字型");
+        add("gui.contemporaryconstruction.font.cancel", "取消");
     }
 }

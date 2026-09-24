@@ -166,5 +166,18 @@ public class ModRuRuLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "Эта стойка знака вощеная и не может быть отредактирована");
         add("message.contemporaryconstruction.no_shapes", "Формы не найдены, поместите изображения в config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "Этот блок помечен как редактируемый, но не реализует IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 Цвет");
+        add("gui.contemporaryconstruction.color.title", "Выбор цвета");
+        add("gui.contemporaryconstruction.color.ok", "OK");
+        add("gui.contemporaryconstruction.color.cancel", "Отмена");
+        add("gui.contemporaryconstruction.color.invalid", "Неверный шестнадцатеричный цвет");
+
+        // ===== GUI: Выбор шрифта =====
+        add("gui.contemporaryconstruction.edit.font", "Шрифт");
+        add("gui.contemporaryconstruction.font.title", "Выбор шрифта");
+        add("gui.contemporaryconstruction.font.empty", "Пользовательские шрифты не найдены. Поместите файлы .ttf в config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "Использовать стандартный шрифт");
+        add("gui.contemporaryconstruction.font.cancel", "Отмена");
     }
 }

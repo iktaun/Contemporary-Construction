@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "com/iktaun/Contemporary_Construction/mixin/FontSetAccessor": {
+      "providers": "f_95055_:Ljava/util/List;"
+    },
+    "com/iktaun/Contemporary_Construction/mixin/FontManagerMixin": {
+      "apply(Lnet/minecraft/client/gui/font/FontManager$Preparation;Lnet/minecraft/util/profiling/ProfilerFiller;)V": "Lnet/minecraft/client/gui/font/FontManager;m_284460_(Lnet/minecraft/client/gui/font/FontManager$Preparation;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/iktaun/Contemporary_Construction/mixin/FontSetAccessor": {
+        "providers": "f_95055_:Ljava/util/List;"
+      },
+      "com/iktaun/Contemporary_Construction/mixin/FontManagerMixin": {
+        "apply(Lnet/minecraft/client/gui/font/FontManager$Preparation;Lnet/minecraft/util/profiling/ProfilerFiller;)V": "Lnet/minecraft/client/gui/font/FontManager;m_284460_(Lnet/minecraft/client/gui/font/FontManager$Preparation;Lnet/minecraft/util/profiling/ProfilerFiller;)V"
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@ public class ShapeElementLayer {
     private float offsetY;
     private float offsetZ;
     private float scale;
-    private DyeColor color;
+    private int color;          // ARGB
     private boolean glowing;
     private boolean visible;
     private float rotateX;
@@ -25,22 +25,32 @@ public class ShapeElementLayer {
     private float scaleX;
     private float scaleY;
 
+    public static final int DEFAULT_COLOR = 0xFFFFFFFF;
+
     // ----- 构造函数 -----
     public ShapeElementLayer() {
-        this("shape", null, 32, 32, 0, 0, 0, 1.0f, DyeColor.WHITE, false, true,
+        this("shape", null, 32, 32, 0, 0, 0, 1.0f, DEFAULT_COLOR, false, true,
                 0, 0, 0, 1.0f, 1.0f);
     }
 
     public ShapeElementLayer(String name, ResourceLocation texture, int width, int height,
                              float offsetX, float offsetY, float scale,
-                             DyeColor color, boolean glowing, boolean visible) {
+                             int color, boolean glowing, boolean visible) {
         this(name, texture, width, height, offsetX, offsetY, 0, scale, color, glowing, visible,
+                0, 0, 0, 1.0f, 1.0f);
+    }
+
+    // 兼容 DyeColor
+    public ShapeElementLayer(String name, ResourceLocation texture, int width, int height,
+                             float offsetX, float offsetY, float scale,
+                             DyeColor dyeColor, boolean glowing, boolean visible) {
+        this(name, texture, width, height, offsetX, offsetY, 0, scale, dyeToArgb(dyeColor), glowing, visible,
                 0, 0, 0, 1.0f, 1.0f);
     }
 
     public ShapeElementLayer(String name, ResourceLocation texture, int width, int height,
                              float offsetX, float offsetY, float offsetZ, float scale,
-                             DyeColor color, boolean glowing, boolean visible,
+                             int color, boolean glowing, boolean visible,
                              float rotateX, float rotateY, float rotateZ,
                              float scaleX, float scaleY) {
         this.name = name;
@@ -70,7 +80,8 @@ public class ShapeElementLayer {
     public float getOffsetY() { return offsetY; }
     public float getOffsetZ() { return offsetZ; }
     public float getScale() { return scale; }
-    public DyeColor getColor() { return color; }
+    public int getColor() { return color; }
+    public int getColorARGB() { return color; }
     public boolean isGlowing() { return glowing; }
     public boolean isVisible() { return visible; }
     public float getRotation() { return rotateZ; }
@@ -88,7 +99,8 @@ public class ShapeElementLayer {
     public void setOffsetX(float offsetX) { this.offsetX = offsetX; }
     public void setOffsetY(float offsetY) { this.offsetY = offsetY; }
     public void setOffsetZ(float offsetZ) { this.offsetZ = offsetZ; }
-    public void setColor(DyeColor color) { this.color = color; }
+    public void setColor(int color) { this.color = color; }
+    public void setColorARGB(int color) { this.color = color; }
     public void setGlowing(boolean glowing) { this.glowing = glowing; }
     public void setVisible(boolean visible) { this.visible = visible; }
     public void setRotation(float rotation) { this.rotateZ = rotation; }
@@ -133,7 +145,7 @@ public class ShapeElementLayer {
         tag.putFloat("offsetY", offsetY);
         tag.putFloat("offsetZ", offsetZ);
         tag.putFloat("scale", scale);
-        tag.putString("color", color.getName());
+        tag.putInt("colorARGB", color);
         tag.putBoolean("glowing", glowing);
         tag.putBoolean("visible", visible);
         tag.putFloat("rotateX", rotateX);
@@ -153,7 +165,7 @@ public class ShapeElementLayer {
         float offsetY = tag.getFloat("offsetY");
         float offsetZ = tag.getFloat("offsetZ");
         float scale = tag.getFloat("scale");
-        DyeColor color = DyeColor.byName(tag.getString("color"), DyeColor.WHITE);
+        int color = parseColorFromTag(tag);
         boolean glowing = tag.getBoolean("glowing");
         boolean visible = tag.getBoolean("visible");
         float rotateX = tag.getFloat("rotateX");
@@ -166,6 +178,19 @@ public class ShapeElementLayer {
                 rotateX, rotateY, rotateZ, scaleX, scaleY);
     }
 
+    public static int parseColorFromTag(CompoundTag tag) {
+        if (tag.contains("colorARGB")) return tag.getInt("colorARGB");
+        if (tag.contains("color")) {
+            DyeColor dye = DyeColor.byName(tag.getString("color"), DyeColor.WHITE);
+            return dyeToArgb(dye);
+        }
+        return DEFAULT_COLOR;
+    }
+
+    public static int dyeToArgb(DyeColor dye) {
+        return 0xFF000000 | dye.getTextColor();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -176,6 +201,7 @@ public class ShapeElementLayer {
                 Float.compare(that.offsetY, offsetY) == 0 &&
                 Float.compare(that.offsetZ, offsetZ) == 0 &&
                 Float.compare(that.scale, scale) == 0 &&
+                color == that.color &&
                 glowing == that.glowing &&
                 visible == that.visible &&
                 Float.compare(that.rotateX, rotateX) == 0 &&
@@ -184,8 +210,7 @@ public class ShapeElementLayer {
                 Float.compare(that.scaleX, scaleX) == 0 &&
                 Float.compare(that.scaleY, scaleY) == 0 &&
                 Objects.equals(name, that.name) &&
-                Objects.equals(texture, that.texture) &&
-                color == that.color;
+                Objects.equals(texture, that.texture);
     }
 
     @Override

@@ -20,21 +20,24 @@ public class ImageLayer {
     private float rotateZ;
     private float scaleX;
     private float scaleY;
+    private int color;    // 新增：ARGB 着色
+
+    public static final int DEFAULT_COLOR = 0xFFFFFFFF; // 白色不透明（不着色）
 
     // ----- 构造函数 -----
     public ImageLayer() {
-        this(null, 64, 64, 0, 0, 0, 1.0f, true, 0, 0, 0, 1.0f, 1.0f);
+        this(null, 64, 64, 0, 0, 0, 1.0f, true, 0, 0, 0, 1.0f, 1.0f, DEFAULT_COLOR);
     }
 
     public ImageLayer(ResourceLocation texture, int width, int height, float offsetX, float offsetY, float scale, boolean visible) {
-        this(texture, width, height, offsetX, offsetY, 0, scale, visible, 0, 0, 0, 1.0f, 1.0f);
+        this(texture, width, height, offsetX, offsetY, 0, scale, visible, 0, 0, 0, 1.0f, 1.0f, DEFAULT_COLOR);
     }
 
     public ImageLayer(ResourceLocation texture, int width, int height,
                       float offsetX, float offsetY, float offsetZ,
                       float scale, boolean visible,
                       float rotateX, float rotateY, float rotateZ,
-                      float scaleX, float scaleY) {
+                      float scaleX, float scaleY, int color) {
         this.textureLocation = texture;
         this.width = width;
         this.height = height;
@@ -48,6 +51,7 @@ public class ImageLayer {
         this.rotateZ = rotateZ;
         this.scaleX = scaleX;
         this.scaleY = scaleY;
+        this.color = color;
     }
 
     // ----- Getters -----
@@ -65,6 +69,8 @@ public class ImageLayer {
     public float getRotateZ() { return rotateZ; }
     public float getScaleX() { return scaleX; }
     public float getScaleY() { return scaleY; }
+    public int getColor() { return color; }
+    public int getColorARGB() { return color; }
 
     // ----- Setters -----
     public void setTextureLocation(ResourceLocation texture) { this.textureLocation = texture; }
@@ -81,6 +87,8 @@ public class ImageLayer {
     public void setRotateZ(float rotateZ) { this.rotateZ = rotateZ; }
     public void setScaleX(float scaleX) { this.scaleX = scaleX; }
     public void setScaleY(float scaleY) { this.scaleY = scaleY; }
+    public void setColor(int color) { this.color = color; }
+    public void setColorARGB(int color) { this.color = color; }
 
     // ----- 便捷方法 -----
     public void move(float dx, float dy) {
@@ -98,7 +106,7 @@ public class ImageLayer {
     public ImageLayer copy() {
         return new ImageLayer(textureLocation, width, height,
                 offsetX, offsetY, offsetZ, scale, visible,
-                rotateX, rotateY, rotateZ, scaleX, scaleY);
+                rotateX, rotateY, rotateZ, scaleX, scaleY, color);
     }
 
     // ----- NBT 序列化 -----
@@ -117,6 +125,7 @@ public class ImageLayer {
         tag.putFloat("rotateZ", rotateZ);
         tag.putFloat("scaleX", scaleX);
         tag.putFloat("scaleY", scaleY);
+        tag.putInt("colorARGB", color);
         return tag;
     }
 
@@ -134,9 +143,10 @@ public class ImageLayer {
         float rotateZ = tag.getFloat("rotateZ");
         float scaleX = tag.getFloat("scaleX");
         float scaleY = tag.getFloat("scaleY");
+        int color = tag.contains("colorARGB") ? tag.getInt("colorARGB") : DEFAULT_COLOR;
         return new ImageLayer(texture, width, height,
                 offsetX, offsetY, offsetZ, scale, visible,
-                rotateX, rotateY, rotateZ, scaleX, scaleY);
+                rotateX, rotateY, rotateZ, scaleX, scaleY, color);
     }
 
     @Override
@@ -155,12 +165,13 @@ public class ImageLayer {
                 Float.compare(that.rotateZ, rotateZ) == 0 &&
                 Float.compare(that.scaleX, scaleX) == 0 &&
                 Float.compare(that.scaleY, scaleY) == 0 &&
+                color == that.color &&
                 Objects.equals(textureLocation, that.textureLocation);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(textureLocation, width, height, offsetX, offsetY, offsetZ,
-                scale, visible, rotateX, rotateY, rotateZ, scaleX, scaleY);
+                scale, visible, rotateX, rotateY, rotateZ, scaleX, scaleY, color);
     }
 }

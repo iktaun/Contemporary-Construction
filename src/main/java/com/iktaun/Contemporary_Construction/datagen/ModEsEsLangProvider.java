@@ -166,5 +166,18 @@ public class ModEsEsLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "Este poste de señalización está encerado y no se puede editar");
         add("message.contemporaryconstruction.no_shapes", "No se encontraron formas, coloca imágenes en config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "Este bloque está marcado como editable pero no implementa IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 Color");
+        add("gui.contemporaryconstruction.color.title", "Selector de color");
+        add("gui.contemporaryconstruction.color.ok", "Aceptar");
+        add("gui.contemporaryconstruction.color.cancel", "Cancelar");
+        add("gui.contemporaryconstruction.color.invalid", "Color hexadecimal no válido");
+
+        // ===== GUI: Selección de fuente =====
+        add("gui.contemporaryconstruction.edit.font", "Fuente");
+        add("gui.contemporaryconstruction.font.title", "Seleccionar fuente");
+        add("gui.contemporaryconstruction.font.empty", "No se encontraron fuentes personalizadas. Coloca los archivos .ttf en config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "Usar fuente predeterminada");
+        add("gui.contemporaryconstruction.font.cancel", "Cancelar");
     }
 }

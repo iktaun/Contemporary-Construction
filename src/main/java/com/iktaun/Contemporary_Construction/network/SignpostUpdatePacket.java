@@ -8,8 +8,8 @@ import com.iktaun.Contemporary_Construction.blocks.Entity.TextLayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.network.NetworkEvent;
@@ -35,8 +35,10 @@ public class SignpostUpdatePacket {
         buf.writeVarInt(textLayers.size());
         for (TextLayer layer : textLayers) {
             buf.writeComponent(layer.getText());
-            buf.writeEnum(layer.getColor());
+            buf.writeInt(layer.getColorARGB());
             buf.writeBoolean(layer.isGlowing());
+            buf.writeBoolean(layer.isBold());
+            buf.writeBoolean(layer.isItalic());
             buf.writeFloat(layer.getOffsetX());
             buf.writeFloat(layer.getOffsetY());
             buf.writeFloat(layer.getOffsetZ());
@@ -45,6 +47,10 @@ public class SignpostUpdatePacket {
             buf.writeFloat(layer.getRotateZ());
             buf.writeFloat(layer.getScaleX());
             buf.writeFloat(layer.getScaleY());
+            // ★ 字体
+            ResourceLocation fontId = layer.getFontId();
+            buf.writeBoolean(fontId != null);
+            if (fontId != null) buf.writeUtf(fontId.toString());
         }
 
         // ===== 图片图层 =====
@@ -64,6 +70,7 @@ public class SignpostUpdatePacket {
             buf.writeFloat(layer.getRotateZ());
             buf.writeFloat(layer.getScaleX());
             buf.writeFloat(layer.getScaleY());
+            buf.writeInt(layer.getColorARGB());
         }
 
         // ===== 形状图层 =====
@@ -78,7 +85,7 @@ public class SignpostUpdatePacket {
             buf.writeFloat(layer.getOffsetY());
             buf.writeFloat(layer.getOffsetZ());
             buf.writeFloat(layer.getScale());
-            buf.writeUtf(layer.getColor().getName());
+            buf.writeInt(layer.getColorARGB());
             buf.writeBoolean(layer.isGlowing());
             buf.writeBoolean(layer.isVisible());
             buf.writeFloat(layer.getRotateX());
@@ -97,8 +104,10 @@ public class SignpostUpdatePacket {
         List<TextLayer> textLayers = new ArrayList<>();
         for (int i = 0; i < textCount; i++) {
             Component text = buf.readComponent();
-            DyeColor color = buf.readEnum(DyeColor.class);
+            int color = buf.readInt();
             boolean glowing = buf.readBoolean();
+            boolean bold = buf.readBoolean();
+            boolean italic = buf.readBoolean();
             float offsetX = buf.readFloat();
             float offsetY = buf.readFloat();
             float offsetZ = buf.readFloat();
@@ -107,8 +116,15 @@ public class SignpostUpdatePacket {
             float rotateZ = buf.readFloat();
             float scaleX = buf.readFloat();
             float scaleY = buf.readFloat();
-            TextLayer layer = new TextLayer(text, color, glowing,
+            // ★ 字体
+            ResourceLocation fontId = null;
+            if (buf.readBoolean()) {
+                fontId = new ResourceLocation(buf.readUtf());
+            }
+
+            TextLayer layer = new TextLayer(text, color, glowing, bold, italic,
                     offsetX, offsetY, offsetZ, rotateX, rotateY, rotateZ, scaleX, scaleY);
+            layer.setFontId(fontId);
             textLayers.add(layer);
         }
 
@@ -117,7 +133,7 @@ public class SignpostUpdatePacket {
         List<ImageLayer> imageLayers = new ArrayList<>();
         for (int i = 0; i < imageCount; i++) {
             String textureStr = buf.readUtf();
-            var texture = textureStr.isEmpty() ? null : new net.minecraft.resources.ResourceLocation(textureStr);
+            ResourceLocation texture = textureStr.isEmpty() ? null : new ResourceLocation(textureStr);
             int width = buf.readInt();
             int height = buf.readInt();
             float offsetX = buf.readFloat();
@@ -130,9 +146,10 @@ public class SignpostUpdatePacket {
             float rotateZ = buf.readFloat();
             float scaleX = buf.readFloat();
             float scaleY = buf.readFloat();
+            int color = buf.readInt();
             imageLayers.add(new ImageLayer(texture, width, height,
                     offsetX, offsetY, offsetZ, scale, visible,
-                    rotateX, rotateY, rotateZ, scaleX, scaleY));
+                    rotateX, rotateY, rotateZ, scaleX, scaleY, color));
         }
 
         // ===== 形状图层 =====
@@ -141,14 +158,14 @@ public class SignpostUpdatePacket {
         for (int i = 0; i < shapeCount; i++) {
             String name = buf.readUtf();
             String textureStr = buf.readUtf();
-            var texture = textureStr.isEmpty() ? null : new net.minecraft.resources.ResourceLocation(textureStr);
+            ResourceLocation texture = textureStr.isEmpty() ? null : new ResourceLocation(textureStr);
             int width = buf.readInt();
             int height = buf.readInt();
             float offsetX = buf.readFloat();
             float offsetY = buf.readFloat();
             float offsetZ = buf.readFloat();
             float scale = buf.readFloat();
-            DyeColor color = DyeColor.byName(buf.readUtf(), DyeColor.WHITE);
+            int color = buf.readInt();
             boolean glowing = buf.readBoolean();
             boolean visible = buf.readBoolean();
             float rotateX = buf.readFloat();

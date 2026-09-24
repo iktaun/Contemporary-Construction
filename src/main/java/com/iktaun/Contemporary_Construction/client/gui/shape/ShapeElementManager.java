@@ -24,12 +24,28 @@ public class ShapeElementManager {
     private static final Map<String, ShapeElementData> ELEMENTS = new LinkedHashMap<>();
 
     private static final String[] BUILTIN_SHAPES = {
-            "arrow_up", "arrow_down", "arrow_left", "arrow_right",
-            "arrow_turn_left", "arrow_turn_right",
-            "slash", "backslash",
-            "cross", "check", "star", "heart", "diamond",
-            "triangle_up", "triangle_down", "triangle_left", "triangle_right",
-            "circle", "square", "round_rect", "hexagon"
+            // ===== 箭头（Arrow）=====
+            "arrow",           // 箭头 ↑
+
+            // ===== 符号（Symbol）=====
+            "slash",              // 斜杠 /
+            "slant",
+            "cross",              // 叉号 ✕
+            "check",              // 对勾 ✓
+            "star",               // 星号 ★
+
+            // ===== 图形（Shape）=====
+            "heart",              // 心形 ♥
+            "diamond",            // 菱形 ♦
+            "circle",             // 圆形 ●
+            "hollow_circle",      // 空心圆 ○
+            "square",             // 正方形 ■
+            "round_rect",         // 圆角矩形 ▢
+            "hexagon",            // 六边形 ⬡
+            "octagon",            // 六边形 ⬡
+
+            // ===== 三角形（Triangle）=====
+            "triangle",        // 三角 ▲
     };
 
     public static void reload() {

@@ -166,5 +166,18 @@ public class ModItItLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "Questo palo di segnalazione è cerato e non può essere modificato");
         add("message.contemporaryconstruction.no_shapes", "Nessuna forma trovata, inserisci le immagini in config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "Questo blocco è contrassegnato come modificabile ma non implementa IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 Colore");
+        add("gui.contemporaryconstruction.color.title", "Selettore colore");
+        add("gui.contemporaryconstruction.color.ok", "OK");
+        add("gui.contemporaryconstruction.color.cancel", "Annulla");
+        add("gui.contemporaryconstruction.color.invalid", "Colore esadecimale non valido");
+
+        // ===== GUI: Selezione carattere =====
+        add("gui.contemporaryconstruction.edit.font", "Carattere");
+        add("gui.contemporaryconstruction.font.title", "Seleziona carattere");
+        add("gui.contemporaryconstruction.font.empty", "Nessun carattere personalizzato trovato. Inserisci i file .ttf in config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "Usa carattere predefinito");
+        add("gui.contemporaryconstruction.font.cancel", "Annulla");
     }
 }

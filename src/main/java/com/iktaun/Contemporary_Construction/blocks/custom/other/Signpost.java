@@ -79,7 +79,7 @@ public class Signpost extends BaseEntityBlock {
         Direction facing = state.getValue(FACING);
         switch (facing) {
             case EAST: return SHAPE_A;
-            case SOUTH: return SHAPE_B;
+            case NORTH: return SHAPE_B;
             case WEST: return SHAPE_A;
             default: return SHAPE_B;
         }

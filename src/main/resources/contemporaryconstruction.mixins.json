@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.iktaun.Contemporary_Construction.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "com.iktaun.Contemporary_Construction.mixin.MixinPlugin",
+  "refmap": "true",
+  "mixins": [
+    "FontManagerMixin",
+    "FontSetAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

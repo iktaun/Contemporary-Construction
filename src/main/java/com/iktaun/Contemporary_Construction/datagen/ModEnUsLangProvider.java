@@ -166,5 +166,18 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "This signpost is waxed and cannot be edited");
         add("message.contemporaryconstruction.no_shapes", "No shapes found, please put images in config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "This block is marked as editable but does not implement IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 Color");
+        add("gui.contemporaryconstruction.color.title", "Color Picker");
+        add("gui.contemporaryconstruction.color.ok", "OK");
+        add("gui.contemporaryconstruction.color.cancel", "Cancel");
+        add("gui.contemporaryconstruction.color.invalid", "Invalid hex color");
+
+        // ===== GUI: Font Selection =====
+        add("gui.contemporaryconstruction.edit.font", "Font");
+        add("gui.contemporaryconstruction.font.title", "Select Font");
+        add("gui.contemporaryconstruction.font.empty", "No custom fonts found. Put .ttf files into config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "Use Vanilla Font");
+        add("gui.contemporaryconstruction.font.cancel", "Cancel");
     }
 }

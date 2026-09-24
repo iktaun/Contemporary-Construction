@@ -19,6 +19,8 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = "contemporaryconstruction")
 public class MouseEventListener {
 
+
+
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
         Level level = event.getLevel();
@@ -47,9 +49,7 @@ public class MouseEventListener {
 
     private static boolean isHoldingBrush(Player player) {
         return player.getMainHandItem().getItem() == Moditems.BRUSH.get() ||
-                player.getOffhandItem().getItem() == Moditems.BRUSH.get() ||
-                player.getMainHandItem().getItem() == Items.BRUSH ||
-                player.getOffhandItem().getItem() == Items.BRUSH;
+                player.getOffhandItem().getItem() == Moditems.BRUSH.get();
     }
 
     private static void handleEditableClick(Player player, IEditableWithBrush editable, BlockPos pos) {

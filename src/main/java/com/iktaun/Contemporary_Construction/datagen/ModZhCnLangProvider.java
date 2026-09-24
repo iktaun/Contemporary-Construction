@@ -166,5 +166,18 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "此路牌已蜡封，无法编辑");
         add("message.contemporaryconstruction.no_shapes", "没有形状，请将图片放入 config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "此方块标记为可编辑，但未实现 IEditableWithBrush 接口");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 颜色");
+        add("gui.contemporaryconstruction.color.title", "颜色选择器");
+        add("gui.contemporaryconstruction.color.ok", "确定");
+        add("gui.contemporaryconstruction.color.cancel", "取消");
+        add("gui.contemporaryconstruction.color.invalid", "无效的十六进制颜色");
+
+        // ===== GUI：字体选择 =====
+        add("gui.contemporaryconstruction.edit.font", "字体");
+        add("gui.contemporaryconstruction.font.title", "选择字体");
+        add("gui.contemporaryconstruction.font.empty", "未检测到自定义字体，请将 .ttf 文件放入 config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "使用原版字体");
+        add("gui.contemporaryconstruction.font.cancel", "取消");
     }
 }

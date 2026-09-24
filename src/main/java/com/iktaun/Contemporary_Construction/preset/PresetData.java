@@ -74,11 +74,20 @@ public class PresetData {
         return new SignpostText(textList, imageList, shapeList);
     }
 
-    // ===== 内部数据类 =====
+    private static int legacyDyeToArgb(String colorName) {
+        if (colorName == null || colorName.isEmpty()) return 0xFFFFFFFF;
+        DyeColor dye = DyeColor.byName(colorName, DyeColor.WHITE);
+        return 0xFF000000 | dye.getTextColor();
+    }
+
+    // ===== TextLayerData =====
     public static class TextLayerData {
         public String text;
         public String color;
+        public Integer colorARGB;
         public boolean glowing;
+        public Boolean bold;        // 新增（用 Boolean 兼容旧 JSON）
+        public Boolean italic;      // 新增
         public float offsetX;
         public float offsetY;
         public float offsetZ;
@@ -92,8 +101,10 @@ public class PresetData {
 
         public TextLayerData(TextLayer layer) {
             this.text = layer.getText().getString();
-            this.color = layer.getColor().getName();
+            this.colorARGB = layer.getColorARGB();
             this.glowing = layer.isGlowing();
+            this.bold = layer.isBold();
+            this.italic = layer.isItalic();
             this.offsetX = layer.getOffsetX();
             this.offsetY = layer.getOffsetY();
             this.offsetZ = layer.getOffsetZ();
@@ -106,12 +117,15 @@ public class PresetData {
 
         public TextLayer toTextLayer() {
             Component comp = Component.literal(text);
-            DyeColor dye = DyeColor.byName(color, DyeColor.WHITE);
-            return new TextLayer(comp, dye, glowing,
+            int argb = (colorARGB != null) ? colorARGB : legacyDyeToArgb(color);
+            boolean b = (bold != null) ? bold : false;
+            boolean i = (italic != null) ? italic : false;
+            return new TextLayer(comp, argb, glowing, b, i,
                     offsetX, offsetY, offsetZ, rotateX, rotateY, rotateZ, scaleX, scaleY);
         }
     }
 
+    // ===== ImageLayerData =====
     public static class ImageLayerData {
         public String texture;
         public int width;
@@ -126,6 +140,8 @@ public class PresetData {
         public float rotateZ;
         public float scaleX;
         public float scaleY;
+        public Integer colorARGB;
+        public String color;
 
         public ImageLayerData() {}
 
@@ -143,16 +159,19 @@ public class PresetData {
             this.rotateZ = layer.getRotateZ();
             this.scaleX = layer.getScaleX();
             this.scaleY = layer.getScaleY();
+            this.colorARGB = layer.getColorARGB();
         }
 
         public ImageLayer toImageLayer() {
-            ResourceLocation loc = texture.isEmpty() ? null : new ResourceLocation(texture);
+            ResourceLocation loc = (texture == null || texture.isEmpty()) ? null : new ResourceLocation(texture);
+            int argb = (colorARGB != null) ? colorARGB : 0xFFFFFFFF;
             return new ImageLayer(loc, width, height,
                     offsetX, offsetY, offsetZ, scale, visible,
-                    rotateX, rotateY, rotateZ, scaleX, scaleY);
+                    rotateX, rotateY, rotateZ, scaleX, scaleY, argb);
         }
     }
 
+    // ===== ShapeLayerData =====
     public static class ShapeLayerData {
         public String name;
         public String texture;
@@ -163,6 +182,7 @@ public class PresetData {
         public float offsetZ;
         public float scale;
         public String color;
+        public Integer colorARGB;
         public boolean glowing;
         public boolean visible;
         public float rotateX;
@@ -182,7 +202,7 @@ public class PresetData {
             this.offsetY = layer.getOffsetY();
             this.offsetZ = layer.getOffsetZ();
             this.scale = layer.getScale();
-            this.color = layer.getColor().getName();
+            this.colorARGB = layer.getColorARGB();
             this.glowing = layer.isGlowing();
             this.visible = layer.isVisible();
             this.rotateX = layer.getRotateX();
@@ -193,10 +213,10 @@ public class PresetData {
         }
 
         public ShapeElementLayer toShapeLayer() {
-            ResourceLocation loc = texture.isEmpty() ? null : new ResourceLocation(texture);
-            DyeColor dye = DyeColor.byName(color, DyeColor.WHITE);
+            ResourceLocation loc = (texture == null || texture.isEmpty()) ? null : new ResourceLocation(texture);
+            int argb = (colorARGB != null) ? colorARGB : legacyDyeToArgb(color);
             return new ShapeElementLayer(name, loc, width, height,
-                    offsetX, offsetY, offsetZ, scale, dye, glowing, visible,
+                    offsetX, offsetY, offsetZ, scale, argb, glowing, visible,
                     rotateX, rotateY, rotateZ, scaleX, scaleY);
         }
     }

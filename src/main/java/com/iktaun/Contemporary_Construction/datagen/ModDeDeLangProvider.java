@@ -166,5 +166,18 @@ public class ModDeDeLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "Dieser Schildermast ist gewachst und kann nicht bearbeitet werden");
         add("message.contemporaryconstruction.no_shapes", "Keine Formen gefunden, bitte legen Sie Bilder in config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "Dieser Block ist als bearbeitbar markiert, implementiert aber nicht IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 Farbe");
+        add("gui.contemporaryconstruction.color.title", "Farbauswahl");
+        add("gui.contemporaryconstruction.color.ok", "OK");
+        add("gui.contemporaryconstruction.color.cancel", "Abbrechen");
+        add("gui.contemporaryconstruction.color.invalid", "Ungültige Hex-Farbe");
+
+        // ===== GUI: Schriftauswahl =====
+        add("gui.contemporaryconstruction.edit.font", "Schriftart");
+        add("gui.contemporaryconstruction.font.title", "Schriftart auswählen");
+        add("gui.contemporaryconstruction.font.empty", "Keine benutzerdefinierten Schriftarten gefunden. Legen Sie .ttf-Dateien in config/contemporaryconstruction/fonts/ ab");
+        add("gui.contemporaryconstruction.font.vanilla", "Standard-Schriftart verwenden");
+        add("gui.contemporaryconstruction.font.cancel", "Abbrechen");
     }
 }

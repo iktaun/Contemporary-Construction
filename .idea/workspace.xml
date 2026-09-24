@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf059f30-87ad-44fd-912a-2bc0efbc91ac" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Contemporary Construction" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Contemporary Construction" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Contemporary Construction" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Contemporary Construction" type="f1a62948:ProjectNode" />
+                <item name="运行配置" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/blockstates/acacia_fence.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_button_inventory.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_button_pressed.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_door_bottom_left_open.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_door_top_left.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_door_top_left_open.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_fence_gate_wall.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_fence_gate_wall_open.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar!/assets/minecraft/models/block/acacia_fence_post.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-sources.jar!/net/minecraft/world/level/block/FenceBlock.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="376hd5mFZ3yNPZ1cxn6jvPTYjzs" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.C:/Users/iktaun/Desktop/Modern Structure/Modern Structure [createMcpToSrg].executor": "Run",
+    "Gradle.Comtemporary Construction [createMcpToSrg].executor": "Run",
+    "Gradle.Comtemporary Construction [runData].executor": "Debug",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.Test.EditorTest.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_02.TestActionEvent.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_02.TestActionEvent02.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_02.TestText.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_03.TestKeyListener.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_03.TestMouseListener.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_03.TestWindows.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.Exercise.lesson_03.TextPaint.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.TestBorderLayout.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.Contemporary_Construction.client.gui.renderer.TestGridLayout.main()].executor": "Run",
+    "Gradle.Contemporary Construction [:com.iktaun.fontgenerator.FontPackGenerator.main()].executor": "Run",
+    "Gradle.Contemporary Construction [build].executor": "Run",
+    "Gradle.Contemporary Construction [createMcpToSrg].executor": "Run",
+    "Gradle.Contemporary Construction [jar].executor": "Run",
+    "Gradle.Contemporary Construction [runClient].executor": "Run",
+    "Gradle.Contemporary Construction [runData].executor": "Run",
+    "Gradle.D:/Desktop/Comtemporary Construction/Comtemporary Construction [createMcpToSrg].executor": "Run",
+    "Gradle.F:/Desktop/Modern Structure/Modern Structure [createMcpToSrg].executor": "Run",
+    "Gradle.Modern Structure [build].executor": "Run",
+    "Gradle.Modern Structure [clean].executor": "Run",
+    "Gradle.Modern Structure [createMcpToSrg].executor": "Run",
+    "Gradle.Modern Structure [genIntellijRuns].executor": "Run",
+    "Gradle.Modern Structure [jar].executor": "Run",
+    "Gradle.Modern Structure [runClient].executor": "Run",
+    "Gradle.Modern Structure [runData].executor": "Run",
+    "Gradle.下载源代码.executor": "Run",
+    "Gradle.加载 Gradle 依赖项.executor": "Run",
+    "Gradle.升级 Gradle 包装器.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "OverrideImplement.combined": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Desktop/Contemporary Construction/Contemporary Construction",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.51797605",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\java\com\iktaun\Contemporary_Construction\client\gui\renderer\Exercise\lesson_02" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\run\config" />
+      <recent name="C:\Users\iktaun\Desktop\Modern Structure\Modern Structure\src\main\resources\assets\modernstructure\models\block\column\thick_steel_column\blockstates\c" />
+      <recent name="C:\Users\iktaun\Desktop\Modern Structure\Modern Structure\src\main\resources\assets\modernstructure\models\block\column\thick_steel_clolumn" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\road_block" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\column\formal" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\barrier" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\column\thick" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.iktaun.Contemporary_Construction.mixin" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value=".add(Modblocks.YELLOW_RIGHT_SIGNAL_BITUMEN_BLOCK.get())" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.Contemporary Construction [build]">
+    <configuration name="FontPackGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.iktaun.fontgenerator.FontPackGenerator" />
+      <module name="Contemporary_Construction.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iktaun.fontgenerator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Contemporary Construction [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Contemporary Construction [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Contemporary Construction [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Contemporary Construction [runData]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runData" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Contemporary Construction" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Contemporary Construction" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Contemporary Construction [build]" />
+      <item itemvalue="Gradle.Contemporary Construction [jar]" />
+      <item itemvalue="Gradle.Contemporary Construction [runClient]" />
+      <item itemvalue="Gradle.Contemporary Construction [runData]" />
+      <item itemvalue="应用程序.FontPackGenerator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Contemporary Construction [build]" />
+        <item itemvalue="Gradle.Contemporary Construction [runClient]" />
+        <item itemvalue="应用程序.FontPackGenerator" />
+        <item itemvalue="Gradle.Contemporary Construction [runData]" />
+        <item itemvalue="Gradle.Contemporary Construction [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="bf059f30-87ad-44fd-912a-2bc0efbc91ac" name="更改" comment="" />
+      <created>1766229512453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766229512453</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/iktaun/Contemporary_Construction/client/gui/renderer/Exercise/lesson_03/TestKeyListener.java</url>
+          <line>33</line>
+          <log-expression expression="&quot;Exit&quot;" language="JAVA" mode="CODE_FRAGMENT" />
+          <placement>INTER_LINE</placement>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

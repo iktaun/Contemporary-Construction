@@ -1,0 +1,98 @@
+{
+  "name": "czxcvxcvxzcvxcvzv",
+  "author": "iktaun",
+  "createdTime": 1789879884154,
+  "description": "",
+  "textLayers": [
+    {
+      "text": "东 江 大 道",
+      "colorARGB": -13248962,
+      "glowing": true,
+      "offsetX": -8.0,
+      "offsetY": -8.7,
+      "offsetZ": 1.1,
+      "rotateX": 0.0,
+      "rotateY": 0.0,
+      "rotateZ": 0.0,
+      "scaleX": 0.6,
+      "scaleY": 0.6
+    },
+    {
+      "text": "Dongjiang DaDao",
+      "colorARGB": -13248962,
+      "glowing": false,
+      "offsetX": -8.0,
+      "offsetY": -2.7,
+      "offsetZ": 1.1,
+      "rotateX": 0.0,
+      "rotateY": 0.0,
+      "rotateZ": 0.0,
+      "scaleX": 0.3,
+      "scaleY": 0.3
+    },
+    {
+      "text": "东 江 大 道",
+      "colorARGB": -13248962,
+      "glowing": false,
+      "offsetX": -8.0,
+      "offsetY": -8.7,
+      "offsetZ": -1.0,
+      "rotateX": 0.0,
+      "rotateY": 180.0,
+      "rotateZ": 0.0,
+      "scaleX": 0.6,
+      "scaleY": 0.6
+    },
+    {
+      "text": "Dongjiang DaDao",
+      "colorARGB": -13248962,
+      "glowing": false,
+      "offsetX": -8.0,
+      "offsetY": -2.7,
+      "offsetZ": -1.0,
+      "rotateX": 0.0,
+      "rotateY": 180.0,
+      "rotateZ": 0.0,
+      "scaleX": 0.3,
+      "scaleY": 0.3
+    }
+  ],
+  "imageLayers": [
+    {
+      "texture": "contemporaryconstruction:image_1789879859284",
+      "width": 102,
+      "height": 102,
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "offsetZ": 0.0,
+      "scale": 1.0,
+      "visible": true,
+      "rotateX": 0.0,
+      "rotateY": 0.0,
+      "rotateZ": 0.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "colorARGB": -1
+    }
+  ],
+  "shapeLayers": [
+    {
+      "name": "circle",
+      "texture": "contemporaryconstruction:textures/persetelement/circle.png",
+      "width": 32,
+      "height": 32,
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "offsetZ": 0.0,
+      "scale": 1.0,
+      "colorARGB": -40737,
+      "glowing": false,
+      "visible": true,
+      "rotateX": 0.0,
+      "rotateY": 0.0,
+      "rotateZ": 0.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0
+    }
+  ]
+}

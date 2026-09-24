@@ -4,6 +4,7 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = mod_version
@@ -64,11 +65,13 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', mod_id
             property("mixin.env.remapRefMap", "true")
             property("mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg")
+            args "-mixin.config=${mod_id}.mixins.json"
         }
 
         server {
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
+            args "-mixin.config=${mod_id}.mixins.json"
         }
 
         // 此运行配置启动 GameTestServer 并运行所有已注册的游戏测试，然后退出。
@@ -91,6 +94,10 @@ minecraft {
 
 // 包含数据生成器生成的资源。
 sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
+}
 
 repositories {
     maven {
@@ -131,6 +138,13 @@ dependencies {
     // at runtime, use the full JEI jar for Forge
     runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
     implementation fg.deobf("maven.modrinth:jade:${project.jade_version}")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly('io.github.llamalad7:mixinextras-common:0.3.5')
+    annotationProcessor('io.github.llamalad7:mixinextras-common:0.3.5')
+    implementation(jarJar('io.github.llamalad7:mixinextras-forge:0.3.5')) {
+        jarJar.ranged(it, '[0.3.5,)')
+    }
 
     // 使用 JEI 的模组依赖示例 - 使用 fg.deobf() 确保依赖项重新映射到您的开发映射
     // JEI API 在编译时声明使用，而完整的 JEI 工件在运行时使用

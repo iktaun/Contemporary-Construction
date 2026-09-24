@@ -166,5 +166,18 @@ public class ModKoKrLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "이 표지판은 왁스 처리되어 편집할 수 없습니다");
         add("message.contemporaryconstruction.no_shapes", "도형을 찾을 수 없습니다. config/contemporaryconstruction/presets/persetelement/에 이미지를 넣어주세요");
         add("message.contemporaryconstruction.not_editable", "이 블록은 편집 가능으로 표시되었지만 IEditableWithBrush를 구현하지 않았습니다");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 색상");
+        add("gui.contemporaryconstruction.color.title", "색상 선택");
+        add("gui.contemporaryconstruction.color.ok", "확인");
+        add("gui.contemporaryconstruction.color.cancel", "취소");
+        add("gui.contemporaryconstruction.color.invalid", "잘못된 16진수 색상");
+
+        // ===== GUI：글꼴 선택 =====
+        add("gui.contemporaryconstruction.edit.font", "글꼴");
+        add("gui.contemporaryconstruction.font.title", "글꼴 선택");
+        add("gui.contemporaryconstruction.font.empty", "사용자 정의 글꼴을 찾을 수 없습니다. config/contemporaryconstruction/fonts/에 .ttf 파일을 넣어주세요");
+        add("gui.contemporaryconstruction.font.vanilla", "기본 글꼴 사용");
+        add("gui.contemporaryconstruction.font.cancel", "취소");
     }
 }

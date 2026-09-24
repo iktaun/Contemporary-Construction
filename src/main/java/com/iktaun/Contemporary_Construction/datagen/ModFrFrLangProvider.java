@@ -166,5 +166,18 @@ public class ModFrFrLangProvider extends LanguageProvider {
         add("message.contemporaryconstruction.waxed", "Ce poteau de signalisation est ciré et ne peut pas être modifié");
         add("message.contemporaryconstruction.no_shapes", "Aucune forme trouvée, veuillez placer des images dans config/contemporaryconstruction/presets/persetelement/");
         add("message.contemporaryconstruction.not_editable", "Ce bloc est marqué comme éditable mais n'implémente pas IEditableWithBrush");
+
+        add("gui.contemporaryconstruction.edit.color", "🎨 Couleur");
+        add("gui.contemporaryconstruction.color.title", "Sélecteur de couleur");
+        add("gui.contemporaryconstruction.color.ok", "OK");
+        add("gui.contemporaryconstruction.color.cancel", "Annuler");
+        add("gui.contemporaryconstruction.color.invalid", "Couleur hexadécimale invalide");
+
+        // ===== GUI : Sélection de police =====
+        add("gui.contemporaryconstruction.edit.font", "Police");
+        add("gui.contemporaryconstruction.font.title", "Sélectionner une police");
+        add("gui.contemporaryconstruction.font.empty", "Aucune police personnalisée trouvée. Placez les fichiers .ttf dans config/contemporaryconstruction/fonts/");
+        add("gui.contemporaryconstruction.font.vanilla", "Utiliser la police par défaut");
+        add("gui.contemporaryconstruction.font.cancel", "Annuler");
     }
 }
