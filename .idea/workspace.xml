@@ -126,7 +126,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Desktop/Contemporary Construction/Contemporary Construction",
+    "last_opened_file_path": "D:/Desktop/Contemporary Construction/Contemporary Construction/src/main/resources/assets/contemporaryconstruction/fonts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -143,18 +143,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\fonts" />
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\java\com\iktaun\Contemporary_Construction\client\gui\renderer\Exercise\lesson_02" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\run\config" />
-      <recent name="C:\Users\iktaun\Desktop\Modern Structure\Modern Structure\src\main\resources\assets\modernstructure\models\block\column\thick_steel_column\blockstates\c" />
-      <recent name="C:\Users\iktaun\Desktop\Modern Structure\Modern Structure\src\main\resources\assets\modernstructure\models\block\column\thick_steel_clolumn" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\fonts" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\road_block" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\column\formal" />
       <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\barrier" />
-      <recent name="D:\Desktop\Contemporary Construction\Contemporary Construction\src\main\resources\assets\contemporaryconstruction\models\item\column\thick" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.iktaun.Contemporary_Construction.mixin" />
@@ -165,7 +165,7 @@
       <command value=".add(Modblocks.YELLOW_RIGHT_SIGNAL_BITUMEN_BLOCK.get())" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Contemporary Construction [build]">
+  <component name="RunManager" selected="Gradle.Contemporary Construction [runClient]">
     <configuration name="FontPackGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.iktaun.fontgenerator.FontPackGenerator" />
       <module name="Contemporary_Construction.main" />
@@ -318,10 +318,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Contemporary Construction [build]" />
         <item itemvalue="Gradle.Contemporary Construction [runClient]" />
-        <item itemvalue="应用程序.FontPackGenerator" />
         <item itemvalue="Gradle.Contemporary Construction [runData]" />
+        <item itemvalue="Gradle.Contemporary Construction [build]" />
+        <item itemvalue="应用程序.FontPackGenerator" />
         <item itemvalue="Gradle.Contemporary Construction [jar]" />
       </list>
     </recent_temporary>
